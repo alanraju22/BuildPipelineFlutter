@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  const Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Log in page',
       theme: ThemeData(
@@ -22,14 +22,14 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class login extends StatefulWidget {
+class Login extends StatefulWidget {
   const login({Key? key}) : super(key: key);
 
   @override
-  State<login> createState() => _loginState();
+  State<login> createState() => _LoginState();
 }
 
-class _loginState extends State<login> {
+class _LoginState extends State<login> {
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
   String errorMsg = " ";
